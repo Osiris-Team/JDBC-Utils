@@ -1,0 +1,2 @@
+# LJDB
+Light Java database
