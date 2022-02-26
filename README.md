@@ -1,2 +1,2 @@
 # LJDB
-Light Java database
+Light Java database || WIP
