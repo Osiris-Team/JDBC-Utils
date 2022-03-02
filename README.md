@@ -7,7 +7,7 @@ but make your life a bit easier. Add this as dependency via
 and even update the columns definitions.
 
 ```java
-import SQLUtils;
+import com.osiris.ljdb.SQLUtils;
 import com.osiris.ljdb.SQLTable;
 
 import java.sql.Connection;
