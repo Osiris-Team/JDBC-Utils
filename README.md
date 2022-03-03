@@ -1,5 +1,5 @@
 # JDBC-Utils [![](https://jitpack.io/v/Osiris-Team/LJDB.svg)](https://jitpack.io/#Osiris-Team/LJDB)
-Collection of utilities for your SQL database to make your life a bit easier. 
+Collection of SQL utilities to make your life a bit easier. Java Database Connectivity (JDBC) Utils.
 Add this as dependency via [Maven/Gradle/Sbt/Leinigen](https://jitpack.io/#Osiris-Team/LJDB/LATEST).
 
 **SQLUtils.initDatabase(...)** will create the database, missing tables and columns,
