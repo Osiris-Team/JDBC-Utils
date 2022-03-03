@@ -1,7 +1,6 @@
-# LJDB [![](https://jitpack.io/v/Osiris-Team/LJDB.svg)](https://jitpack.io/#Osiris-Team/LJDB)
-Light Java database. Lightweight utilities for your SQL database to keep it low-level 
-but make your life a bit easier. Add this as dependency via 
-[Maven/Gradle/Sbt/Leinigen](https://jitpack.io/#Osiris-Team/LJDB/LATEST).
+# JDBC-Utils [![](https://jitpack.io/v/Osiris-Team/LJDB.svg)](https://jitpack.io/#Osiris-Team/LJDB)
+Collection of utilities for your SQL database to make your life a bit easier. 
+Add this as dependency via [Maven/Gradle/Sbt/Leinigen](https://jitpack.io/#Osiris-Team/LJDB/LATEST).
 
 **SQLUtils.initDatabase(...)** will create the database, missing tables and columns,
 and even update the columns definitions.
