@@ -21,12 +21,12 @@ class Example {
         SQLUtils sql = new SQLUtils();
         sql.initDatabase(con, dbName,
                 (tableUsers = sql.table("users", 
-                        sql.col("id", "INT NOT NULL PRIMARY KEY"),
+                        sql.col("id", "INT NOT NULL AUTO_INCREMENT PRIMARY KEY"),
                         sql.col("name", "VARCHAR(20) NOT NULL"),
                         sql.col("age", "TINYINT NOT NULL"),
                         sql.col("email", "VARCHAR(255) NOT NULL"))),
                 (tableStats = sql.table("stats",
-                        sql.col("id", "INT NOT NULL PRIMARY KEY"),
+                        sql.col("id", "INT NOT NULL AUTO_INCREMENT PRIMARY KEY"),
                         sql.col("timestamp", "TIMESTAMP NOT NULL"),
                         sql.col("daily_visits", "LONG NOT NULL"),
                         sql.col("daily_users", "INT NOT NULL")))
