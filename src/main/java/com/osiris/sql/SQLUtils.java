@@ -16,7 +16,7 @@ public class SQLUtils {
         for (SQLTable table :
                 tables) {
             try (Statement s = con.createStatement()) {
-                s.executeUpdate("CREATE TABLE IF NOT EXISTS "+table);
+                s.executeUpdate("CREATE TABLE IF NOT EXISTS "+table.name);
             }
             SQLColumn columnBefore = null;
             for (SQLColumn column :
