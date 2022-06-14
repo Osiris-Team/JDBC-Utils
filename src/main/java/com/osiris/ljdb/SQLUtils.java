@@ -13,10 +13,7 @@ public class SQLUtils {
      * Creates the {@link SQLTable#columns} if not existing yet. <br>
      * Also updates the {@link SQLColumn#definition} of the column. <br>
      */
-    public void initDatabase(Connection con, String databaseName, SQLTable... tables) throws SQLException {
-        try (Statement s = con.createStatement()) {
-            s.executeUpdate("CREATE DATABASE IF NOT EXISTS "+databaseName);
-        }
+    public void initTables(Connection con, SQLTable... tables) throws SQLException {
         for (SQLTable table :
                 tables) {
             try (Statement s = con.createStatement()) {
