@@ -6,8 +6,8 @@ Add this as dependency to your project via [Maven/Gradle/Sbt/Leinigen](https://j
 and even update the columns definitions.
 
 ```java
-import com.osiris.ljdb.SQLUtils;
-import com.osiris.ljdb.SQLTable;
+import com.osiris.sql.SQLUtils;
+import com.osiris.sql.SQLTable;
 
 import java.sql.Connection;
 
@@ -20,7 +20,7 @@ class Example {
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost/" + dbName, "root", "");
         SQLUtils sql = new SQLUtils();
         sql.initDatabase(con, dbName,
-                (tableUsers = sql.table("users", 
+                (tableUsers = sql.table("users",
                         sql.col("id", "INT NOT NULL AUTO_INCREMENT PRIMARY KEY"),
                         sql.col("name", "VARCHAR(20) NOT NULL"),
                         sql.col("age", "TINYINT NOT NULL"),
@@ -30,7 +30,7 @@ class Example {
                         sql.col("timestamp", "TIMESTAMP NOT NULL"),
                         sql.col("daily_visits", "LONG NOT NULL"),
                         sql.col("daily_users", "INT NOT NULL")))
-                );
+        );
     }
 }
 ```

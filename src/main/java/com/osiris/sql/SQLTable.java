@@ -1,4 +1,4 @@
-package com.osiris.ljdb;
+package com.osiris.sql;
 
 import java.util.ArrayList;
 import java.util.Arrays;

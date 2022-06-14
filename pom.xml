@@ -4,13 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.osiris.ljdb</groupId>
-    <artifactId>LJDB</artifactId>
+    <groupId>com.osiris.sql</groupId>
+    <artifactId>SQL-Utils</artifactId>
     <version>0.2</version>
     <packaging>jar</packaging>
-
-    <name>LJDB</name>
-    <description>Light Java database.</description>
 
     <properties>
         <java.version>8</java.version>

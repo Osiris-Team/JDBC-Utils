@@ -1,4 +1,4 @@
-package com.osiris.ljdb;
+package com.osiris.sql;
 
 public class SQLColumn {
     public String name;
