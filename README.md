@@ -2,7 +2,7 @@
 Collection of SQL utilities to make your life a bit easier. Java Database Connectivity (JDBC) Utils.
 Add this as dependency to your project via [Maven/Gradle/Sbt/Leinigen](https://jitpack.io/#Osiris-Team/JDBC-Utils/LATEST) (requires Java 8 or higher).
 
-**SQLUtils.initDatabase(...)** will create the database, missing tables and columns,
+**SQLUtils.initTables(...)** will create missing tables and columns,
 and even update the columns definitions.
 
 ```java
@@ -19,7 +19,7 @@ class Example {
         String dbName = "db_name";
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost/" + dbName, "root", "");
         SQLUtils sql = new SQLUtils();
-        sql.initDatabase(con, dbName,
+        sql.initTables(con,
                 (tableUsers = sql.table("users",
                         sql.col("id", "INT NOT NULL AUTO_INCREMENT PRIMARY KEY"),
                         sql.col("name", "VARCHAR(20) NOT NULL"),
