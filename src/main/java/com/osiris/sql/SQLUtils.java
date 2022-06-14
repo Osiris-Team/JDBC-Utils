@@ -16,7 +16,9 @@ public class SQLUtils {
         for (SQLTable table :
                 tables) {
             try (Statement s = con.createStatement()) {
-                s.executeUpdate("CREATE TABLE IF NOT EXISTS "+table.name);
+                s.executeUpdate("CREATE TABLE IF NOT EXISTS " + table.name +
+                        "(id int NOT NULL AUTO_INCREMENT," +
+                        " PRIMARY KEY(id))");
             }
             SQLColumn columnBefore = null;
             for (SQLColumn column :
